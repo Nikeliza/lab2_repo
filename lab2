@@ -1,0 +1,32 @@
+def find_min(arr):
+    min_el = arr[0]
+    for el in arr:
+        if el < min_el:
+            min_el = el
+
+    return min_el
+
+def sr_arifm(arr):
+    sum_arr = 0
+    for el in arr:
+        sum_arr = sum_arr+el
+    return sum_arr/len(arr)
+
+if __name__ == '__main__':
+    mas = [2, 3, 6, 9, 1, 5, 8, 4]
+    mas1 = [2, 3, 6, 9, 5, 8]
+
+
+m_el = find_min(mas)
+print('min element ')
+print(m_el)
+m_el = sr_arifm(mas)
+print('sr arifm ')
+print(m_el)
+
+m_el = find_min(mas1)
+print('min element ')
+print(m_el)
+m_el = sr_arifm(mas1)
+print('sr arifm ')
+print(m_el)

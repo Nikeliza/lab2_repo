@@ -1,0 +1,17 @@
+def per_str(str0):
+     new_str = ''
+     for el in range(len(str0) -1, -1, -1):
+         new_str = new_str + str0[el]
+     return new_str
+
+
+str2 = "asdfgh"
+str3 = "qwertyuioppp"
+str1 = per_str(str2)
+print (str2)
+print(str1)
+str1 = per_str(str3)
+print(str3)
+print(str1)
+
+
